@@ -4,6 +4,7 @@ export type DefaultMinigameConfig = {
     | "wordle"
     | "frogger"
     | "rock-paper-scissors"
+    | "riddle"
     | "whack-a-mole";
   onWin: () => void;
   onLose: () => void;
@@ -17,6 +18,12 @@ export type MemoryGameConfig = DefaultMinigameConfig & {
 export type WordleConfig = DefaultMinigameConfig & {
   name: "wordle";
   word: string;
+};
+
+export type RiddleConfig = DefaultMinigameConfig & {
+  name: "riddle";
+  riddle: string;
+  answer: string;
 };
 
 export type MinigameConfig = MemoryGameConfig | WordleConfig;
