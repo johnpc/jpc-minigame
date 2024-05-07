@@ -1,7 +1,7 @@
 {
   "name": "jpc-minigames",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -56,8 +56,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "prettier --write",
-      "eslint --cache --fix"
+      "prettier --write"
     ],
     "*.json": "prettier --write",
     "*.yml": "prettier --write",

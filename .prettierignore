@@ -2,3 +2,4 @@
 .prettierignore
 *.svg
 .husky/
+*.txt
